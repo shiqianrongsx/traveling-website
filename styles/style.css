@@ -23,7 +23,7 @@ body {
 }
 
 #header #banner {
-  height: 150px;
+  line-height:0px;
 }
 #header li {
   float: left;
