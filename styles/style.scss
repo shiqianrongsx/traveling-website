@@ -1,0 +1,230 @@
+@charset "utf-8";//必须设置了这个才能编译有中文的注释
+//length
+$content_width:780px;
+//colors
+$body_bg_color:#2286C6;
+//font
+$fontSize:12px;
+$bg_color:#5EA6EB;
+$border:5px solid #FFF;
+// 初始化一些列参数
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+//
+body{
+	background-color:$body_bg_color;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:$fontSize;
+}
+#content{
+	width:$content_width;
+	margin:0 auto;
+}
+#header{
+	#banner{
+		height:150px;
+	}
+	li{
+		float:left;
+	}
+	a{
+		$w:78px;
+		$h:33px;
+		$c:#004A87;
+		$c_link:#004a87;
+		$c_hover:#FFF;
+		display:block;
+		width:$w;
+		height:$h;
+		line-height:$h;
+		color:$c;
+		text-align:center;
+		background:url(../images/button1.jpg) left no-repeat;
+		&:link,&:visited{
+			color:$c_link;
+		}
+		&:hover{
+			background:url(../images/button1_bg.jpg) left no-repeat;
+			color:$c_hover;
+		}
+	}
+}
+#main{
+	$margin_w:2px;
+	// $main_bg_color:#FFF;
+	$mid_bg_color:#FFF;
+	%commonStyle{
+		border:$border;
+		float:left;
+	}
+	%main_h3{
+		height:20px;
+		line-height:20px;
+		font-size:12px;
+		color:#00399E;
+		padding-left:15px;
+		background:#BBDDFF url(../images/icon2.gif) 6px no-repeat;
+	}
+	%mid_h3{
+		height:41px;
+		text-indent:-9999px;	
+		margin:10px 0;
+	}
+	%img{
+		border:1px solid #FFF;
+	}
+	clear:left;
+	//left
+	#leftCon{
+		$w:190px;
+		$c:#FFF;
+		width:$w;
+		background-color:$bg_color;
+		margin-top:$margin_w;
+		margin-bottom:$margin_w;
+		color:$c;
+		@extend %commonStyle;
+	}
+	.weather h3{
+		$padding_left:74px;
+		$h:42px;
+		padding-left:$padding_left;
+		height:$h;
+		background:url(../images/weather.png) left no-repeat;
+		text-indent:-9999px;
+	}
+	.weather ul{
+		margin:12px 0 9px 10px;
+	}
+	.weather li{
+		$h:15px;
+		height:$h;
+		padding-left:9px;
+		background:url(../images/icon1.gif) left no-repeat;
+	}
+	.today h3{
+		@extend %main_h3;
+	}
+	.today ul{
+		text-align:center;
+		padding-bottom:5px;
+	}
+	.today img{
+		@extend %img;
+	}
+	.today li{
+		padding-top:5px;
+	}
+	//middle
+	#midCon{
+		$w:390px;
+		width:$w;
+		margin:$margin_w;
+		background:$mid_bg_color;
+		@extend %commonStyle;
+
+	}
+	.beauty h3{
+		@extend %mid_h3;
+		background:url(../images/picture_h3.gif) no-repeat;
+	}
+	.beauty ul{
+		text-align:center;
+	}
+	.beauty li{
+		float:left;
+		margin-left:1px;
+		width:94px;
+	}
+	.beauty img{
+		border:1px solid #4AB0FF;
+	}
+	.route h3{
+		@extend %mid_h3;
+		background:url(../images/route_h3.gif) no-repeat;
+	}
+	.route ul{
+		margin:10px 0;
+	}
+	.route li{
+		$h:17px;
+		padding-left:21px;
+		height:$h;
+		line-height:$h;
+		background:url(../images/icon1.gif) 10px no-repeat;
+	}
+	.route a{
+		color:#004E8A;
+		&:hover{
+			color:#000;
+			text-decoration:underline;
+		}
+	}
+	//right
+	#rightCon{
+		$w:166px;
+		width:$w;
+		margin-top:$margin_w;
+		margin-bottom:$margin_w;
+		background-color:$bg_color;
+		@extend %commonStyle;
+	}
+	.scene h3{
+		@extend %main_h3;
+	}
+	.scene ul{
+		padding-bottom:10px;
+	}
+	.scene li{
+		text-align:center;
+		margin-top:10px;
+	}
+	.scene img{
+		width:150px;
+		height:100px;
+		@extend %img;
+	}
+	.snack h3{
+		@extend %main_h3;
+	}
+	.snack ul{
+		padding:15px 10px;
+	}
+	.snack li{
+		padding-left:15px;
+		background:url(../images/icon1.gif) 5px center no-repeat;
+		border-bottom:1px dashed #FFF;
+		height:20px;
+		line-height:20px;
+	}
+	.snack a{
+		color:#FFF;
+		&:hover{
+			color:#000;
+		}
+	}
+	// .hotel h3{
+	// 	@extend %main_h3;
+	// }
+	.hotel{
+		@extend .snack;
+	}
+	.clear{
+		clear:left;
+	}
+}
+#footer{
+	p{
+		background-color:$bg_color;
+		border:$border;
+		text-align:center;
+	}
+}

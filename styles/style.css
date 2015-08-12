@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #2286C6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+#content {
+  width: 780px;
+  margin: 0 auto;
+}
+
+#header #banner {
+  height: 150px;
+}
+#header li {
+  float: left;
+}
+#header a {
+  display: block;
+  width: 78px;
+  height: 33px;
+  line-height: 33px;
+  color: #004A87;
+  text-align: center;
+  background: url(../images/button1.jpg) left no-repeat;
+}
+#header a:link, #header a:visited {
+  color: #004a87;
+}
+#header a:hover {
+  background: url(../images/button1_bg.jpg) left no-repeat;
+  color: #FFF;
+}
+
+#main {
+  clear: left;
+}
+#main #leftCon, #main #midCon, #main #rightCon {
+  border: 5px solid #FFF;
+  float: left;
+}
+#main .today h3, #main .scene h3, #main .snack h3, #main .hotel h3 {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #00399E;
+  padding-left: 15px;
+  background: #BBDDFF url(../images/icon2.gif) 6px no-repeat;
+}
+#main .beauty h3, #main .route h3 {
+  height: 41px;
+  text-indent: -9999px;
+  margin: 10px 0;
+}
+#main .today img, #main .scene img {
+  border: 1px solid #FFF;
+}
+#main #leftCon {
+  width: 190px;
+  background-color: #5EA6EB;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: #FFF;
+}
+#main .weather h3 {
+  padding-left: 74px;
+  height: 42px;
+  background: url(../images/weather.png) left no-repeat;
+  text-indent: -9999px;
+}
+#main .weather ul {
+  margin: 12px 0 9px 10px;
+}
+#main .weather li {
+  height: 15px;
+  padding-left: 9px;
+  background: url(../images/icon1.gif) left no-repeat;
+}
+#main .today ul {
+  text-align: center;
+  padding-bottom: 5px;
+}
+#main .today li {
+  padding-top: 5px;
+}
+#main #midCon {
+  width: 390px;
+  margin: 2px;
+  background: #FFF;
+}
+#main .beauty h3 {
+  background: url(../images/picture_h3.gif) no-repeat;
+}
+#main .beauty ul {
+  text-align: center;
+}
+#main .beauty li {
+  float: left;
+  margin-left: 1px;
+  width: 94px;
+}
+#main .beauty img {
+  border: 1px solid #4AB0FF;
+}
+#main .route h3 {
+  background: url(../images/route_h3.gif) no-repeat;
+}
+#main .route ul {
+  margin: 10px 0;
+}
+#main .route li {
+  padding-left: 21px;
+  height: 17px;
+  line-height: 17px;
+  background: url(../images/icon1.gif) 10px no-repeat;
+}
+#main .route a {
+  color: #004E8A;
+}
+#main .route a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+#main #rightCon {
+  width: 166px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: #5EA6EB;
+}
+#main .scene ul {
+  padding-bottom: 10px;
+}
+#main .scene li {
+  text-align: center;
+  margin-top: 10px;
+}
+#main .scene img {
+  width: 150px;
+  height: 100px;
+}
+#main .snack ul, #main .hotel ul {
+  padding: 15px 10px;
+}
+#main .snack li, #main .hotel li {
+  padding-left: 15px;
+  background: url(../images/icon1.gif) 5px center no-repeat;
+  border-bottom: 1px dashed #FFF;
+  height: 20px;
+  line-height: 20px;
+}
+#main .snack a, #main .hotel a {
+  color: #FFF;
+}
+#main .snack a:hover, #main .hotel a:hover {
+  color: #000;
+}
+#main .clear {
+  clear: left;
+}
+
+#footer p {
+  background-color: #5EA6EB;
+  border: 5px solid #FFF;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
